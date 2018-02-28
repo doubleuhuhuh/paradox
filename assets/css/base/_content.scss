@@ -1,0 +1,19 @@
+.content-wrap {
+    padding-top: $content-upper-padding;
+    padding-bottom: $content-upper-padding * 2;
+
+    @include col(4,5,2em);
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+
+    @include media(md, max){
+        @include col(1,1,10%);
+        padding-top: $content-upper-padding * 2;
+    }
+
+    @include media(sm, max){
+        @include col(1,1, 8%);
+        padding-top: $content-upper-padding * 2;
+    }
+}

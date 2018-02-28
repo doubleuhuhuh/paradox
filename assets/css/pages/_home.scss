@@ -1,0 +1,39 @@
+.content-home {
+    &__carousel {
+        margin-top: -25px;
+        width: 100%;
+        max-height: 600px;
+    }
+    @include media(md, max){
+        margin-top: $content-upper-padding;
+    }
+
+    .instafeed {
+        margin-top: 1em;
+
+        @include media(md, max){
+            margin-top: 3em;
+        }
+
+        &__item {
+            float: left;
+            min-height: 245px;
+            @include col(1,5);
+
+            @include media(md, max){
+                @include col(1,2);
+            }
+
+            @include media(md, max){
+                @include col(1,2);
+                margin-bottom: .5em;
+            }
+
+            img {
+                margin: auto;
+                display: block;
+                width: 96%;
+            }
+        }
+    }
+}

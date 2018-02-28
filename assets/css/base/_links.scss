@@ -1,0 +1,7 @@
+a {
+    color: $color-brand;
+    text-decoration: none;
+    &:hover {
+        color: $color-brand-hover;
+    }
+}

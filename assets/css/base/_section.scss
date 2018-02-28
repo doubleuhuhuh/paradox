@@ -1,0 +1,24 @@
+.section {
+    margin-bottom: 3.5em;
+    border-bottom: 1px solid $color-grey-light;
+    padding: 0 0 36px;
+
+    &__header {
+        font-family: $header-font;
+        margin-bottom: .3em;
+        font-weight: 900;
+    }
+
+    &__subheader {
+        font-family: $subheader-font;
+        margin: .5em 0 0;
+        font-size: 3em;
+        font-weight: 400;
+    }
+
+    &__links {
+        display: block;
+        padding: 20px 0 0;
+        font-family: $paragraph-font;
+    }
+}

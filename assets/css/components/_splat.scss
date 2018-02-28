@@ -1,0 +1,54 @@
+.splat-one {
+    background: $color-white url("../img/blot-2-lessgrain.jpg");
+    background-position: top center;
+    background-size: cover;
+    position: absolute;
+    right: 58%;
+    top: 0;
+    width: 800px;
+    height: 895px;
+    transform: rotate(180deg);
+    padding-top: 128px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: fixed;
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__zero {
+        background: #fff url('../img/blot1-optimized-2.jpg');
+        background-position: top;
+        background-size: 100% 100%;
+        position: fixed;
+        left: -275px;
+        top: 25px;
+        width: 500px;
+        height: 700px;
+
+        @include media(md, max){
+            right: -260px;
+            top: 25px;
+            width: 500px;
+            height: 700px;
+            transform: rotate(200deg);
+            left: auto;
+        }
+        @include media(sm, max){
+            display: none;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        background-color: $color-white;
+        opacity: 0.8;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        opacity: .5;
+        background-color: white;
+    }
+}

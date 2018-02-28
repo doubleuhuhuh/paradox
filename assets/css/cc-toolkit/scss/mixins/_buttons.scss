@@ -1,0 +1,38 @@
+
+@mixin cc-button($color, $background, $active-color: false, $active-background: false) {
+    background-color: $background;
+    border-color: $color;
+    color: $color;
+
+    @if not $active-color {
+        $active-color: $background;
+    }
+    @if not $active-background{
+        $active-background: $color;
+    }
+
+    &-hover,
+    &:hover,
+    &:focus{
+        background-color: $active-background;
+        border-color: $active-background;
+        color: $active-color;
+    }
+}
+
+
+@mixin cc-button-hollow($color, $active-color: false) {
+    border-color: $color;
+    color: $color;
+
+    @if not $active-color {
+        $active-color: darken($color, 10%);
+    }
+
+    &-hover,
+    &:hover,
+    &:focus{
+        border-color: $active-color;
+        color: $active-color;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    {{>subpage_header}}
+	<body>
+
+
+
+        <div class="wrap">
+
+            <div class="page-row">
+                {{!-- NAV --}}
+                {{>nav}}
+
+
+                <div class="content-wrap offset">
+                    <div class="content-services services">
+
+                        {{#each services}}
+                            <div class="section">
+                                {{#with service_block}}
+                                    <h5 class="section__header">{{header}}</h5>
+
+
+                                    {{#each list_of_services}}
+                                        <div class="services__item">
+                                            <div class="services__type">{{type}}</div>
+                                            <div class="services__price">{{price}}</div>
+                                            <div class="services__disclaimer">
+                                                {{disclaimer}}
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                {{/with}}
+                            </div>
+                        {{/each}}
+
+
+                        {{>rezbutton}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+		{{!-- {{>footer}}--}}
+
+	</body>
+
+</html>

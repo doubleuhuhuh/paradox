@@ -1,0 +1,22 @@
+.contact {
+    padding-bottom: 100px;
+    button {
+        margin: 25px 0 60px;
+    }
+
+    .dow,
+    .hours {
+        padding: 20px 0 0;
+        display: inline-block;
+        font-size: 30px;
+        font-family: $paragraph-font;
+        &::selection {
+            background: $color-brand-highlight; /* WebKit/Blink Browsers */
+        }
+    }
+
+    .dow {
+        min-width: 180px;
+    }
+    .hours {}
+}

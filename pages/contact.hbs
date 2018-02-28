@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	{{>subpage_header}}
+	<body>
+
+
+
+        <div class="wrap">
+
+            <div class="page-row">
+                {{!-- NAV --}}
+                {{>nav}}
+
+
+                <div class="content-wrap offset">
+                    <div class="content-contact contact">
+
+                        <div class="section">
+                            <h5 class="section__header">Hours</h5>
+                            {{#each hours}}
+                                <p>
+                                    <div class="dow">{{dow}}</div>
+                                    <div class="hours">{{hours}}</div>
+                                </p>
+                            {{/each}}
+                        </div>
+
+                        <div class="section__section">
+                            <h5 class="section__header">Phone & Email</h5>
+                            {{#with phone}}
+                                <p><a class="section__links" href="tel:+{{link_number}}">{{display_number}}</a></p>
+                            {{/with}}
+
+                            {{#with email}}
+                                <p><a class="section__links" href="mailto:{{link_email}}">{{display_email}}</a> </p>
+                            {{/with}}
+                        </div>
+
+                        {{>rezbutton}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		{{!-- {{>footer}}--}}
+
+	</body>
+</html>

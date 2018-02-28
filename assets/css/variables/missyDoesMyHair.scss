@@ -1,0 +1,56 @@
+// SCREEN WIDTHS
+// $xxl-min: 1600px;
+// $xl-min: 1280px;
+// $lg-min: 1024px;
+// $md-min: 768px;
+// $sm-min: 568px;
+
+
+// Import toolkit variables
+// @import "~cc-toolkit/scss/_variables";
+// Update toolkit settings
+$black:       #000;
+$white:       #fff;
+$dark-gray:   #252525;
+$light-gray:  #ddd;
+$cc-namespace: 'missy-';
+
+// Base colors
+$color-black:              #000;
+$color-white:              #fff;
+$color-grey-light:         #ccc;
+
+// Colors
+$color-brand:              $color-black;
+$color-brand-hover:        #5F4B8B;
+$color-brand-highlight:    $color-grey-light;
+
+$color-red:                #6e1023;
+$color-plum:               #36121a;
+$color-dark-green:         #2b3c2d;
+$color-olive:              #636238;
+$color-light-green:        #aaaf90;
+
+
+//
+$page-max-width:                1200px;
+$content-upper-padding:         50px;
+$content-mobile-upper-padding:  75px;
+
+$lato:          'Lato', sans-serif;
+$poiret:        'Poiret One', cursive;
+
+$anton:     'Anton', sans-serif;
+$jalla:     'Fjalla One', sans-serif;
+$abril:     'Abril Fatface', cursive;
+
+
+// $clicker:   'Clicker Script', cursive;
+$oswald:    'Oswald', sans-serif;
+$lato:      'Lato', sans-serif;
+
+
+$header-font: $jalla;
+$subheader-font: $header-font;
+$paragraph-font: $poiret;
+$link-font: $oswald;

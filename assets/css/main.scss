@@ -1,0 +1,22 @@
+// TOOLKIT INCLUDES
+@import 'cc-toolkit/scss/main';
+@import "cc-toolkit/scss/mixins/_grid.scss";
+@import "cc-toolkit/scss/mixins/_media.scss";
+
+
+@import 'variables/*';
+
+
+
+// BASE STYLES
+@import 'base/*';
+
+// Components
+@import 'components/nav';
+@import 'components/splat';
+
+
+// Pages
+@import 'pages/home';
+@import 'pages/services';
+@import 'pages/contact';

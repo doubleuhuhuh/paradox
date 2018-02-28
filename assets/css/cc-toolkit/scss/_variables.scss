@@ -1,0 +1,98 @@
+// NAME SPACE
+$cc-namespace: 'cc-';
+
+// GRID
+$grid-columns: 12;
+$grid-gutter: 1em;
+
+// SCREEN WIDTHS
+$xxl-min: 1600px;
+$xl-max: $xxl-min - 1;
+$xl-min: 1280px;
+$lg-max: $xl-min - 1;
+$lg-min: 1024px;
+$md-max: $lg-min - 1;
+$md-min: 768px;
+$sm-max: $md-min - 1;
+$sm-min: 568px;
+$xs-max: $sm-min - 1;
+
+// BASE COLORS
+$black: #000;
+$white: #fff;
+$dark-gray: #252525;
+$light-gray: #ddd;
+
+
+//BUTTONS
+$button-background-active: $dark-gray;
+$button-background: $light-gray;
+$button-border-radius: 3px;
+$button-border-width: 1px;
+$button-color-active: $light-gray;
+$button-color: $dark-gray;
+$button-padding: 0.5em 1em;
+
+
+// MENU
+$menu-children-background: $white;
+$menu-heading-color: $dark-gray;
+$menu-link-active-backgground: $light-gray;
+$menu-link-active-color: $dark-gray;
+$menu-link-color: $dark-gray;
+$menu-separator-background: $light-gray;
+
+
+// FORM
+$form-checkbox-margin: 0.5em 0;
+$form-control-group-label-margin: 0 1em 0 0;
+$form-control-group-label-width: 10em;
+$form-control-group-margin: 0 0 0.5em 0;
+$form-controls-margin: 1.5em 0 0 11em;
+$form-fieldset-border: 0;
+$form-fieldset-margin: 0;
+$form-fieldset-padding: 0.35em 0 0.75em;
+$form-group-button-margin: 0.35em 0;
+$form-group-fieldset-margin: 0 0 10px 0;
+$form-group-input-border-radius: 0;
+$form-group-input-margin: 0 0 -1px;
+$form-group-input-padding: 10px;
+$form-input-active-border-color: #129FEA;
+$form-input-border-radius: 4px;
+$form-input-border: 1px solid #ccc;
+$form-input-boxshadow: inset 0 1px 3px #ddd;
+$form-input-color-padding: 0.2em 0.5em;
+$form-input-disabled-background: #eaeded;
+$form-input-disabled-color: #cad2d3;
+$form-input-font-size: 1rem;
+$form-input-invalid-border-color: #e9322d;
+$form-input-invalid-color: #b94a48;
+$form-input-line-height: 1.3;
+$form-input-padding: 0.5em 0.6em;
+$form-input-readonly-background: #eee;
+$form-input-readonly-border-color: #ccc;
+$form-input-readonly-color: #777;
+$form-input-stacked-margin: 0.25em 0;
+$form-label-margin: 0.5em 0 0.2em;
+$form-legend-border: 0 0 1px 0 solid #e5e5e5;
+$form-legend-color: #333;
+$form-legend-margin: 0 0 0.3em 0;
+$form-legend-padding: 0.3em 0;
+$form-select-background: $white;
+$form-select-border: 1px solid #ccc;
+$form-select-height: 2.25em;
+
+
+// TABLES
+$table-border-color: #cbcbcb;
+$table-cell-padding: 0.5em 1em;
+$table-thead-background: #e0e0e0;
+$table-thead-color: #000;
+$table-zebra-stripe-color: #f2f2f2;
+
+
+// TABS
+$tabs-border-bottom-width: 2px;
+$tabs-border-bottom-color: $light-gray;
+$tabs-color: $dark-gray;
+$tabs-color-active: #003e7e;

@@ -1,0 +1,50 @@
+@import 'mixins/buttons';
+
+.#{$cc-namespace}button{
+        border: $button-border-width solid $button-color;
+		border-radius: $button-border-radius;
+		font-family: inherit;
+		font-size: 100%;
+		padding: $button-padding;
+		text-decoration: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        line-height: normal;
+        text-align: center;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        zoom: 1;
+
+		/* Firefox: Get rid of the inner focus border */
+		&:-moz-focus-inner {
+			padding: 0;
+			border: 0;
+		}
+
+		&:focus {
+			outline: 0;
+		}
+
+}
+
+.#{$cc-namespace}button{
+    background-color: $button-background;
+    color: $button-color;
+
+    &-hover,
+    &:hover,
+    &:focus{
+        background-color: $button-background-active;
+        border-color: $button-color-active;
+        color: $button-color-active;
+    }
+}
+
+.#{$cc-namespace}button.hollow{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}

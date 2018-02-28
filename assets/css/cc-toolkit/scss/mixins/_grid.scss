@@ -1,0 +1,25 @@
+@mixin row($gutter: $grid-gutter) {
+    margin:  0 ($grid-gutter * -1);
+}
+
+@mixin col($number, $columns: $grid-columns, $gutter: null) {
+    width: percentage($number / $columns);
+    @if $gutter != null{
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+}
+@mixin push-col($number, $columns: $grid-columns) {
+    margin-left: percentage($number / $columns);
+}
+
+@mixin row-end($number: null){
+    @if $number != null{
+        &:nth-child(#{$number}n+1){
+            clear: left;
+        }
+    }
+    @else{
+        clear: left;
+    }
+}

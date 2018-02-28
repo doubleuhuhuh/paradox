@@ -1,0 +1,40 @@
+{
+  "name": "cc-toolkit",
+  "version": "0.1.2",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp dev"
+  },
+  "dependencies": {},
+  "main": "./main.js",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "es6-promise": "^3.1.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-util": "^3.0.7",
+    "ismobilejs": "^0.4.0",
+    "jshint": "^2.9.1",
+    "node-sass": "^4.0.0",
+    "postcss-loader": "^1.2.0",
+    "pump": "^1.0.1",
+    "raw-loader": "^0.5.1",
+    "require-dir": "^0.3.1",
+    "sass-loader": "^4.0.2",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

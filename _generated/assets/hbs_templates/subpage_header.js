@@ -1,0 +1,3 @@
+define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<head>\n    <title>enduro.js page</title>\n    <link rel=\"stylesheet\" href=\"../assets/css/main.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Lato:100,200\" rel=\"stylesheet\">\n\n    <link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Lato|Poiret+One\" rel=\"stylesheet\">\n\n</head>\n";
+},"useData":true}); });

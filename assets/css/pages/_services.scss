@@ -1,0 +1,65 @@
+.services {
+
+    &__item {
+        padding: 12px 6px;
+        overflow:hidden;
+        width: 100%;
+        // @include row(-2em);
+    }
+
+    &__type,
+    &__price {
+        display: inline-block;
+        font-size: 2em;
+        font-family: $paragraph-font;
+        float: left;
+        line-height: 1;
+    }
+    &__type {
+        font-weight: 400;
+        @include col(4,12);
+        margin-top: 10px;
+        @include media(md, max){
+            @include col(5,12);
+        }
+        @include media(sm, max){
+            @include col(1,2);
+        }
+    }
+    &__price {
+        // position: relative;
+        font-weight: 100;
+        @include col(3,12);
+
+        &:before {
+            font-family: $lato;
+            content: '|';
+            margin-right: 12px;
+            font-size: 1.5em;
+            font-weight: 100;
+            line-height: 1;
+        }
+
+        @include media(sm, max){
+            @include col(1,2);
+        }
+    }
+    &__disclaimer {
+        line-height: 1;
+        @include col(5,12);
+        float: left;
+        font-size: 1.3em;
+        color: $color-grey-light;
+        display: inline-block;
+        margin-top: 15px;
+
+        @include media(md, max){
+            @include col(4,12);
+        }
+
+        @include media(sm, max){
+            @include col(1,1,1em);
+
+        }
+    }
+}

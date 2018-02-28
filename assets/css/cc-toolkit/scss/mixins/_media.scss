@@ -1,0 +1,35 @@
+@mixin media($type, $range: min) {
+  $min: 0; //default min value
+  $max: $xxl-min * 4; //default max value
+  @if $type == xxl {
+    $min: $xxl-min;
+  } @else if $type == xl {
+    $min: $xl-min;
+    $max: $xl-max;
+  } @else if $type == lg {
+    $min: $lg-min;
+    $max: $lg-max;
+  } @else if $type == md {
+    $min: $md-min;
+    $max: $md-max;
+  } @else if $type == sm {
+    $min: $sm-min;
+    $max: $sm-max;
+  } @else if $type == xs {
+    $min: 0;
+    $max: $xs-max;
+ }
+  @if $range == min {
+    @media only screen and (min-width:$min){
+      @content;
+    }
+  } @else if $range == max {
+    @media only screen and (max-width:$max){
+      @content;
+    }
+  } @else if $range == in {
+    @media only screen and (min-width:$min) and (max-width:$max){
+      @content;
+    }
+  }
+}

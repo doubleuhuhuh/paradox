@@ -1,0 +1,4 @@
+{
+    "./js/page.js"            : "./js/page.js",
+    "./css/main.css"          : "./scss/main.scss"
+}

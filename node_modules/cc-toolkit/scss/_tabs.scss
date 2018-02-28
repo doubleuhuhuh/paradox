@@ -1,0 +1,24 @@
+.#{$cc-namespace}tabs-nav{
+    border-bottom: $tabs-border-bottom-width solid $tabs-border-bottom-color;
+}
+.#{$cc-namespace}tabs-nav,
+.#{$cc-namespace}tabs-nav li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.#{$cc-namespace}tabs-nav li,
+.#{$cc-namespace}tabs-nav a{
+    display: inline-block;
+}
+.#{$cc-namespace}tabs-nav a{
+    color: $tabs-color;
+    border-bottom:  $tabs-border-bottom-width solid transparent;
+    padding: .5rem 1rem;
+    margin-bottom: $tabs-border-bottom-width * -1;
+}
+.#{$cc-namespace}tabs-nav .active a{
+    color: $tabs-color-active;
+    border-bottom:  $tabs-border-bottom-width solid $tabs-color-active;
+}

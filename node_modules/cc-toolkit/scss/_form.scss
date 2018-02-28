@@ -1,0 +1,289 @@
+.#{$cc-namespace}form{
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    select,
+    textarea {
+        padding: $form-input-padding;
+        display: inline-block;
+        border: $form-input-border;
+        box-shadow: $form-input-boxshadow;
+        border-radius: $form-input-border-radius;
+        vertical-align: middle;
+        box-sizing: border-box;
+        font-size: $form-input-font-size;
+        line-height: $form-input-line-height;
+    }
+
+    input:not([type]) {
+        padding: $form-input-border-radius;
+        display: inline-block;
+        border: $form-input-border;
+        box-shadow: $form-input-boxshadow;
+        border-radius: $form-input-border-radius;
+        box-sizing: border-box;
+        font-size: $form-input-font-size;
+    }
+
+    input[type="color"] {
+        padding: $form-input-color-padding;
+        font-size: $form-input-font-size;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: 0;
+        border-color: $form-input-active-border-color;
+    }
+
+    input:not([type]):focus {
+        outline: 0;
+        border-color: $form-input-active-border-color;
+    }
+
+    input[type="file"]:focus,
+    input[type="radio"]:focus,
+    input[type="checkbox"]:focus {
+        outline: thin solid $form-input-active-border-color;
+        outline: 1px auto $form-input-active-border-color;
+    }
+
+    .#{$cc-namespace}checkbox,
+    .#{$cc-namespace}radio {
+        margin: $form-checkbox-margin;
+        display: block;
+    }
+
+    input[type="text"][disabled],
+    input[type="password"][disabled],
+    input[type="email"][disabled],
+    input[type="url"][disabled],
+    input[type="date"][disabled],
+    input[type="month"][disabled],
+    input[type="time"][disabled],
+    input[type="datetime"][disabled],
+    input[type="datetime-local"][disabled],
+    input[type="week"][disabled],
+    input[type="number"][disabled],
+    input[type="search"][disabled],
+    input[type="tel"][disabled],
+    input[type="color"][disabled],
+    select[disabled],
+    textarea[disabled] {
+        cursor: not-allowed;
+        background-color: $form-input-disabled-background;
+        color: $form-input-disabled-color;
+    }
+
+    input:not([type])[disabled] {
+        cursor: not-allowed;
+        background-color: $form-input-disabled-background;
+        color: $form-input-disabled-color;
+    }
+
+    input[readonly],
+    select[readonly],
+    textarea[readonly] {
+        background-color: $form-input-readonly-background;
+        color: $form-input-readonly-color; /* menu text color */
+        border-color: $form-input-readonly-border-color;
+    }
+
+    input:focus:invalid,
+    textarea:focus:invalid,
+    select:focus:invalid {
+        color: $form-input-invalid-color;
+        border-color: $form-input-invalid-border-color;
+    }
+
+    input[type="file"]:focus:invalid:focus,
+    input[type="radio"]:focus:invalid:focus,
+    input[type="checkbox"]:focus:invalid:focus {
+        outline-color: $form-input-invalid-border-color;
+    }
+
+    select {
+        /* Normalizes the height; padding is not sufficient. */
+        height: $form-select-height;
+        border: $form-select-border;
+        background-color: $form-select-background;
+    }
+
+    select[multiple] {
+        height: auto;
+    }
+
+    label {
+        margin: $form-label-margin;
+    }
+    fieldset {
+        margin: $form-fieldset-margin;
+        padding: $form-fieldset-padding;
+        border: $form-fieldset-border;
+    }
+    legend {
+        display: block;
+        width: 100%;
+        padding: $form-legend-padding;
+        margin: $form-legend-margin;
+        color: $form-legend-color;
+        border: $form-legend-border;
+    }
+
+}
+
+.#{$cc-namespace}form-stacked{
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    input[type="file"],
+    select,
+    label,
+    textarea {
+        display: block;
+        margin: $form-input-stacked-margin;
+    }
+
+    input:not([type]) {
+        display: block;
+        margin: $form-input-stacked-margin;
+    }
+}
+.#{$cc-namespace}form-fill{
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    input[type="file"],
+    select,
+    label,
+    textarea {
+        display: block;
+        margin: $form-input-stacked-margin;
+        width: 100%;
+    }
+
+    input:not([type]) {
+        display: block;
+        margin: $form-input-stacked-margin;
+        width: 100%;
+    }
+}
+.#{$cc-namespace}form-aligned{
+    input,
+    textarea,
+    select{
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+    }
+    textarea {
+        vertical-align: top;
+    }
+
+    .#{$cc-namespace}control-group {
+        margin: $form-control-group-margin;
+    }
+    .#{$cc-namespace}control-group label {
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+        width: $form-control-group-label-width;
+        margin: $form-control-group-label-margin;
+    }
+    .#{$cc-namespace}controls {
+        margin: $form-controls-margin;
+    }
+}
+
+.#{$cc-namespace}form .#{$cc-namespace}-group{
+
+    /* Grouped Inputs */
+    fieldset {
+        margin: $form-group-fieldset-margin;
+    }
+    input,
+    textarea {
+        display: block;
+        padding: $form-group-input-padding;
+        margin: $form-group-input-margin;
+        border-radius: $form-group-input-border-radius;
+        position: relative;
+        top: -1px;
+    }
+    input:focus,
+    textarea:focus {
+        z-index: 3;
+    }
+    input:first-child,
+    textarea:first-child {
+        top: 1px;
+        border-radius: $form-input-border-radius $form-input-border-radius 0 0;
+        margin: 0;
+    }
+    input:first-child:last-child,
+    textarea:first-child:last-child {
+        top: 1px;
+        border-radius: $form-input-border-radius;
+        margin: 0;
+    }
+    input:last-child,
+    textarea:last-child {
+        top: -2px;
+        border-radius: 0 0 $form-input-border-radius $form-input-border-radius;
+        margin: 0;
+    }
+    button {
+        margin: $form-group-button-margin;
+    }
+}
